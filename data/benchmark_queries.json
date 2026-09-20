@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "query": "Người mua có bao nhiêu ngày để gửi yêu cầu trả hàng hoàn tiền sau khi giao thành công?",
+    "gold": "15 ngày kể từ lúc đơn hàng được cập nhật giao hàng thành công; thực phẩm tươi sống và đông lạnh: 24 giờ.",
+    "gold_marker": "15 (mười lăm) ngày",
+    "metadata_filter": null,
+    "expected_doc_id": "shopee-return-refund-policy"
+  },
+  {
+    "id": 2,
+    "query": "Shopee Đảm Bảo cho phép trả hàng hoàn tiền trong bao nhiêu ngày và xử lý khi chưa nhận được hàng?",
+    "gold": "Shopee Đảm Bảo bảo vệ người mua bằng Trả hàng/Hoàn tiền trong vòng 15 ngày; nếu chưa nhận hàng có thể yêu cầu với lý do Chưa nhận được hàng.",
+    "gold_marker": "Shopee Đảm Bảo",
+    "metadata_filter": null,
+    "expected_doc_id": "shopee-dam-bao"
+  },
+  {
+    "id": 3,
+    "query": "Trong bao lâu cần phản hồi hoặc khiếu nại quyết định hoàn tiền của Shopee?",
+    "gold": "Người bán cần phản hồi/khiếu nại trong vòng 2 ngày (02 ngày lịch) kể từ khi nhận thông báo của Shopee.",
+    "gold_marker": "2 ngày",
+    "metadata_filter": {
+      "audience": "seller"
+    },
+    "expected_doc_id": "shopee-seller-return-faq"
+  },
+  {
+    "id": 4,
+    "query": "Shopee có phải là bên thực hiện nghĩa vụ bảo hành sản phẩm trên sàn không?",
+    "gold": "Shopee không chịu trách nhiệm bảo hành bất kỳ sản phẩm nào và không phải bên thực hiện nghĩa vụ bảo hành, trừ sản phẩm do chính Shopee đăng bán.",
+    "gold_marker": "không phải là bên thực hiện nghĩa vụ bảo hành",
+    "metadata_filter": null,
+    "expected_doc_id": "shopee-warranty-policy"
+  },
+  {
+    "id": 5,
+    "query": "Người bán vào đâu trên Kênh Người Bán để quản lý đơn Trả hàng/Hoàn tiền/Hủy?",
+    "gold": "Kênh người bán > Quản lý đơn hàng > mục Trả hàng/Hoàn tiền/Hủy.",
+    "gold_marker": "Trả hàng/Hoàn tiền/Hủy",
+    "metadata_filter": null,
+    "expected_doc_id": "shopee-seller-return-overview"
+  }
+]

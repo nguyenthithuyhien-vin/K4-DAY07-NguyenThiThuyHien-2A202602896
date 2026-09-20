@@ -1,0 +1,71 @@
+Embedding backend: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+Corpus size: 7 documents
+
+=== Baseline ChunkingStrategyComparator ===
+
+[shopee-dam-bao]
+  fixed_size: count=4 avg_length=366.0
+  by_sentences: count=5 avg_length=266.2
+  recursive: count=4 avg_length=334.5
+
+[shopee-dang-ban-san-pham]
+  fixed_size: count=60 avg_length=398.2
+  by_sentences: count=78 avg_length=273.3
+  recursive: count=68 avg_length=314.7
+
+[shopee-return-refund-general]
+  fixed_size: count=6 avg_length=387.8
+  by_sentences: count=6 avg_length=352.7
+  recursive: count=7 avg_length=302.3
+
+=== Strategy: heading | chunks=132 ===
+Q1 filter=None marker=True doc_hit=True
+  1. score=0.7507 doc=shopee-return-refund-general aud=buyer | ## 1.2. Thời gian tối đa để gửi yêu cầu trả hàng hoàn tiền cho Shopee  Thời gian để Shopee tiếp nhận yêu cầu Trả hàng/Hoàn tiền từ bạn sẽ là:  - Đối với đơn hàng giao thực phẩm tươ
+  2. score=0.7487 doc=shopee-return-refund-general aud=buyer | ## 1.2. Thời gian tối đa để gửi yêu cầu trả hàng hoàn tiền cho Shopee  Yêu cầu Trả hàng/Hoàn tiền của bạn sẽ được phản hồi trong vòng 3-5 ngày làm việc. Hãy theo dõi mục thông báo 
+  3. score=0.7479 doc=shopee-return-refund-policy aud=buyer | 3.2. Người Mua có thể gửi yêu cầu trả hàng/hoàn tiền trong vòng 15 (mười lăm) ngày kể từ lúc đơn hàng được cập nhật giao hàng thành công. Riêng đối với các Sản Phẩm là thực phẩm tư
+Q2 filter=None marker=False doc_hit=False
+  1. score=0.8342 doc=shopee-return-refund-general aud=buyer | ## 1.2. Thời gian tối đa để gửi yêu cầu trả hàng hoàn tiền cho Shopee  Thời gian để Shopee tiếp nhận yêu cầu Trả hàng/Hoàn tiền từ bạn sẽ là:  - Đối với đơn hàng giao thực phẩm tươ
+  2. score=0.8186 doc=shopee-seller-return-faq aud=seller | ### 1. Người mua được Hoàn tiền ngay có thiệt thòi cho Shop không?  Shop hoàn toàn có thể khiếu nại quyết định Hoàn tiền ngay trong vòng 2 ngày (kể cả thứ 7 và CN, riêng các ngày l
+  3. score=0.8076 doc=shopee-return-refund-general aud=buyer | ## 1.2. Thời gian tối đa để gửi yêu cầu trả hàng hoàn tiền cho Shopee  Yêu cầu Trả hàng/Hoàn tiền của bạn sẽ được phản hồi trong vòng 3-5 ngày làm việc. Hãy theo dõi mục thông báo 
+Q3 filter={'audience': 'seller'} marker=True doc_hit=True
+  1. score=0.7693 doc=shopee-seller-return-faq aud=seller | ### 1. Người mua được Hoàn tiền ngay có thiệt thòi cho Shop không?  Shop hoàn toàn có thể khiếu nại quyết định Hoàn tiền ngay trong vòng 2 ngày (kể cả thứ 7 và CN, riêng các ngày l
+  2. score=0.7445 doc=shopee-seller-return-faq aud=seller | ### 1. Thời hạn Người bán khiếu nại quyết định Trả hàng & Hoàn tiền là bao lâu?  Người bán được quyền khiếu nại khi:
+  3. score=0.7171 doc=shopee-seller-return-faq aud=seller | ### 2. Trường hợp nào Người bán khiếu nại Hoàn tiền ngay sẽ thắng?  Người bán cần khiếu nại đúng hạn trong vòng 2 ngày sau khi nhận được thông báo Hoàn tiền ngay và cung cấp bằng c
+Q3 A/B no-filter marker=True doc_hit=True top1_aud=buyer
+  1. score=0.811 doc=shopee-return-refund-general aud=buyer | ## 1.2. Thời gian tối đa để gửi yêu cầu trả hàng hoàn tiền cho Shopee  Yêu cầu Trả hàng/Hoàn tiền của bạn sẽ được phản hồi trong vòng 3-5 ngày làm việc. Hãy theo dõi mục thông báo 
+  2. score=0.7693 doc=shopee-seller-return-faq aud=seller | ### 1. Người mua được Hoàn tiền ngay có thiệt thòi cho Shop không?  Shop hoàn toàn có thể khiếu nại quyết định Hoàn tiền ngay trong vòng 2 ngày (kể cả thứ 7 và CN, riêng các ngày l
+  3. score=0.7531 doc=shopee-return-refund-general aud=buyer | ## 1.2. Thời gian tối đa để gửi yêu cầu trả hàng hoàn tiền cho Shopee  Thời gian để Shopee tiếp nhận yêu cầu Trả hàng/Hoàn tiền từ bạn sẽ là:  - Đối với đơn hàng giao thực phẩm tươ
+Q4 filter=None marker=True doc_hit=True
+  1. score=0.6986 doc=shopee-return-refund-policy aud=buyer | 2.1. Theo các điều khoản và điều kiện được quy định trong Chính Sách Trả Hàng và Hoàn Tiền này và tạo thành một phần của Điều Khoản Dịch Vụ, Shopee đảm bảo quyền lợi của Người Mua 
+  2. score=0.6903 doc=shopee-warranty-policy aud=both | ## 4. Chính sách bảo hành  Shopee khuyến cáo Người Mua hàng cần kiểm tra các chính sách bảo hành, báo trì đối với hàng hóa có dự định mua trước khi đặt hàng. Shopee sẽ không chịu t
+  3. score=0.6833 doc=shopee-dang-ban-san-pham aud=seller | 1. Nguyên tắc chung  a. Đăng bán sản phẩm trên Shopee là hoạt động của Người Bán dùng hàng hóa, dịch vụ và tài liệu về hàng hóa, dịch vụ để giới thiệu với khách hàng về hàng hóa, d
+Q5 filter=None marker=True doc_hit=True
+  1. score=0.707 doc=shopee-seller-return-overview aud=seller | ## 1. Cách thức truy cập và bố cục trang  Tại Kênh người bán > chọn Quản lý đơn hàng > vào mục Trả hàng/Hoàn tiền/Hủy.  Trang này giúp Shop xem các yêu cầu đang chờ xử lý, cần bổ s
+  2. score=0.6874 doc=shopee-seller-return-overview aud=seller | # Tổng quan trang quản lý Trả hàng/Hoàn tiền/Hủy dành cho Người bán  > Nội dung làm sạch từ Học viện Shopee Uni (banhang.shopee.vn/edu/article/21021). Trang SPA không extract được 
+  3. score=0.658 doc=shopee-dang-ban-san-pham aud=seller | 1. Đối tượng áp dụng  Quy định này áp dụng đối với tất cả Người Bán trên Sàn TMĐT Shopee (“Sàn Shopee”)
+
+=== Strategy: recursive | chunks=167 ===
+Q1 filter=None marker=True doc_hit=True
+  1. score=0.7898 doc=shopee-return-refund-general aud=buyer | - Đối với các đơn hàng khác: 15 ngày kể từ lúc đơn hàng được cập nhật trạng thái ‘Giao hàng thành công’.  Bạn vẫn có thể gửi yêu cầu Trả hàng/Hoàn tiền sau khi đã bấm nút ‘Đã nhận 
+  2. score=0.778 doc=shopee-return-refund-policy aud=buyer | 3.2. Người Mua có thể gửi yêu cầu trả hàng/hoàn tiền trong vòng 15 (mười lăm) ngày kể từ lúc đơn hàng được cập nhật giao hàng thành công. Riêng đối với các Sản Phẩm là thực phẩm tư
+  3. score=0.7727 doc=shopee-dam-bao aud=buyer | Trong trường hợp Người mua nhận được sản phẩm khác với mô tả hoặc bị hư hỏng, Người mua có thể yêu cầu Trả hàng/Hoàn tiền trong vòng 15 ngày kể từ lúc đơn hàng được cập nhật trạng 
+Q2 filter=None marker=False doc_hit=True
+  1. score=0.8375 doc=shopee-return-refund-policy aud=buyer | Người Bán cần gửi phản hồi trong vòng 02 ngày lịch (hoặc thời hạn khác được quy định bởi Shopee trong từng thời điểm) kể từ ngày nhận được thông báo của Shopee nếu không đồng ý với
+  2. score=0.8333 doc=shopee-dam-bao aud=buyer | Trong trường hợp Người mua chưa nhận được hàng:  Nếu đơn hàng chưa được chuẩn bị đúng hạn: Người mua sẽ được hoàn tiền theo hình thức thanh toán của đơn hàng hoặc Số dư TK Shopee. 
+  3. score=0.8314 doc=shopee-seller-return-faq aud=seller | Ngoại trừ: đơn TTHT một phần; lỗi đơn vị vận chuyển; đơn được chấp nhận hoàn tiền ngay (không trả hàng).  Khi khiếu nại Trả hàng/Hoàn tiền của Shop được Shopee chấp nhận, Shop phải
+Q3 filter={'audience': 'seller'} marker=True doc_hit=True
+  1. score=0.7458 doc=shopee-seller-return-faq aud=seller | ## A. Các câu hỏi về quy trình Hoàn tiền ngay (Không cần trả hàng)  ### 1. Người mua được Hoàn tiền ngay có thiệt thòi cho Shop không?  Shop hoàn toàn có thể khiếu nại quyết định H
+  2. score=0.7366 doc=shopee-seller-return-faq aud=seller | Ngoại trừ: đơn TTHT một phần; lỗi đơn vị vận chuyển; đơn được chấp nhận hoàn tiền ngay (không trả hàng).  Khi khiếu nại Trả hàng/Hoàn tiền của Shop được Shopee chấp nhận, Shop phải
+  3. score=0.6966 doc=shopee-seller-return-faq aud=seller | ### 2. Trường hợp nào Người bán khiếu nại Hoàn tiền ngay sẽ thắng?  Người bán cần khiếu nại đúng hạn trong vòng 2 ngày sau khi nhận được thông báo Hoàn tiền ngay và cung cấp bằng c
+Q3 A/B no-filter marker=True doc_hit=False top1_aud=buyer
+  1. score=0.827 doc=shopee-return-refund-policy aud=buyer | Người Bán cần gửi phản hồi trong vòng 02 ngày lịch (hoặc thời hạn khác được quy định bởi Shopee trong từng thời điểm) kể từ ngày nhận được thông báo của Shopee nếu không đồng ý với
+  2. score=0.7491 doc=shopee-return-refund-general aud=buyer | Shopee hiện chưa hỗ trợ yêu cầu đổi hàng. Nếu hàng nhận được có vấn đề (khác với mô tả, hư hỏng,...), bạn có thể từ chối nhận hàng khi đồng kiểm (đối với đơn hàng được Đồng kiểm), 
+  3. score=0.7459 doc=shopee-return-refund-general aud=buyer | Yêu cầu Trả hàng/Hoàn tiền của bạn sẽ được phản hồi trong vòng 3-5 ngày làm việc. Hãy theo dõi mục thông báo trên ứng dụng Shopee để nhanh chóng cập nhật tiến trình xử lý khiếu nại
+Q4 filter=None marker=False doc_hit=False
+  1. score=0.6829 doc=shopee-return-refund-policy aud=buyer | đồng ý của Người Bán. Quy định này nhằm ngăn chặn các hành vi trục lợi, đảm bảo tính minh bạch và công bằng của Chính Sách Trả Hàng và Hoàn Tiền của Shopee.  9.6.  Trường hợp Người
+  2. score=0.6827 doc=shopee-return-refund-policy aud=buyer | 2.1. Theo các điều khoản và điều kiện được quy định trong Chính Sách Trả Hàng và Hoàn Tiền này và tạo thành một phần của Điều Khoản Dịch Vụ, Shopee đảm bảo quyền lợi của Người Mua 
+  3. score=0.6754 doc=shopee-dang-ban-san-pham aud=seller | Khuyến cáo: Người Bán vui lòng tôn trọng và tuân thủ quy định đăng bán sản phẩm của Shopee và các quy định của pháp luật hiện hành. Mọi sản phẩm không tuân thủ theo các quy định, h
+Q5 filter=None marker=True doc_hit=True
+  1. score=0.775 doc=shopee-seller-return-overview aud=seller | Bài viết giới thiệu trang quản lý Trả hàng/Hoàn tiền/Hủy trên Kênh Người Bán, giúp Shop theo dõi và quản lý các đơn trả hàng hoàn tiền, đơn hủy và đơn giao không thành công.  ## 1.
+  2. score=0.7002 doc=shopee-warranty-policy aud=both | Người Bán có trách nhiệm tiếp nhận bảo hành sản phẩm, dịch vụ cho Người Mua như cam kết trong Chính sách bảo hành sản phẩm của Người bán và/hoặc của nhà sản xuất và thông tin về Ch
+  3. score=0.6678 doc=shopee-seller-return-overview aud=seller | # Tổng quan trang quản lý Trả hàng/Hoàn tiền/Hủy dành cho Người bán  > Nội dung làm sạch từ Học viện Shopee Uni (banhang.shopee.vn/edu/article/21021). Trang SPA không extract được 

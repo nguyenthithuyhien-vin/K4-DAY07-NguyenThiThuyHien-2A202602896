@@ -1,0 +1,351 @@
+{
+  "backend": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "strategies": {
+    "heading": [
+      {
+        "query_id": 1,
+        "query": "Người mua có bao nhiêu ngày để gửi yêu cầu trả hàng hoàn tiền sau khi giao thành công?",
+        "filter_used": null,
+        "top3": [
+          {
+            "score": 0.7507,
+            "doc_id": "shopee-return-refund-general",
+            "audience": "buyer",
+            "preview": "## 1.2. Thời gian tối đa để gửi yêu cầu trả hàng hoàn tiền cho Shopee  Thời gian để Shopee tiếp nhận yêu cầu Trả hàng/Hoàn tiền từ bạn sẽ là:  - Đối với đơn hàng giao thực phẩm tươ"
+          },
+          {
+            "score": 0.7487,
+            "doc_id": "shopee-return-refund-general",
+            "audience": "buyer",
+            "preview": "## 1.2. Thời gian tối đa để gửi yêu cầu trả hàng hoàn tiền cho Shopee  Yêu cầu Trả hàng/Hoàn tiền của bạn sẽ được phản hồi trong vòng 3-5 ngày làm việc. Hãy theo dõi mục thông báo "
+          },
+          {
+            "score": 0.7479,
+            "doc_id": "shopee-return-refund-policy",
+            "audience": "buyer",
+            "preview": "3.2. Người Mua có thể gửi yêu cầu trả hàng/hoàn tiền trong vòng 15 (mười lăm) ngày kể từ lúc đơn hàng được cập nhật giao hàng thành công. Riêng đối với các Sản Phẩm là thực phẩm tư"
+          }
+        ],
+        "marker_in_top3": true,
+        "expected_doc_in_top3": true,
+        "agent_answer_preview": "[BENCH] Answer the question using ONLY the context below. Cite supporting chunks by number like [1], [2]. If the answer is not in the context, say you cannot find it.  Context: [1] (source: data/ecommerce/shopee-return-refund-general.md) ## 1.2. Th..."
+      },
+      {
+        "query_id": 2,
+        "query": "Shopee Đảm Bảo cho phép trả hàng hoàn tiền trong bao nhiêu ngày và xử lý khi chưa nhận được hàng?",
+        "filter_used": null,
+        "top3": [
+          {
+            "score": 0.8342,
+            "doc_id": "shopee-return-refund-general",
+            "audience": "buyer",
+            "preview": "## 1.2. Thời gian tối đa để gửi yêu cầu trả hàng hoàn tiền cho Shopee  Thời gian để Shopee tiếp nhận yêu cầu Trả hàng/Hoàn tiền từ bạn sẽ là:  - Đối với đơn hàng giao thực phẩm tươ"
+          },
+          {
+            "score": 0.8186,
+            "doc_id": "shopee-seller-return-faq",
+            "audience": "seller",
+            "preview": "### 1. Người mua được Hoàn tiền ngay có thiệt thòi cho Shop không?  Shop hoàn toàn có thể khiếu nại quyết định Hoàn tiền ngay trong vòng 2 ngày (kể cả thứ 7 và CN, riêng các ngày l"
+          },
+          {
+            "score": 0.8076,
+            "doc_id": "shopee-return-refund-general",
+            "audience": "buyer",
+            "preview": "## 1.2. Thời gian tối đa để gửi yêu cầu trả hàng hoàn tiền cho Shopee  Yêu cầu Trả hàng/Hoàn tiền của bạn sẽ được phản hồi trong vòng 3-5 ngày làm việc. Hãy theo dõi mục thông báo "
+          }
+        ],
+        "marker_in_top3": false,
+        "expected_doc_in_top3": false,
+        "agent_answer_preview": "[BENCH] Answer the question using ONLY the context below. Cite supporting chunks by number like [1], [2]. If the answer is not in the context, say you cannot find it.  Context: [1] (source: data/ecommerce/shopee-return-refund-general.md) ## 1.2. Th..."
+      },
+      {
+        "query_id": 3,
+        "query": "Trong bao lâu cần phản hồi hoặc khiếu nại quyết định hoàn tiền của Shopee?",
+        "filter_used": {
+          "audience": "seller"
+        },
+        "top3": [
+          {
+            "score": 0.7693,
+            "doc_id": "shopee-seller-return-faq",
+            "audience": "seller",
+            "preview": "### 1. Người mua được Hoàn tiền ngay có thiệt thòi cho Shop không?  Shop hoàn toàn có thể khiếu nại quyết định Hoàn tiền ngay trong vòng 2 ngày (kể cả thứ 7 và CN, riêng các ngày l"
+          },
+          {
+            "score": 0.7445,
+            "doc_id": "shopee-seller-return-faq",
+            "audience": "seller",
+            "preview": "### 1. Thời hạn Người bán khiếu nại quyết định Trả hàng & Hoàn tiền là bao lâu?  Người bán được quyền khiếu nại khi:"
+          },
+          {
+            "score": 0.7171,
+            "doc_id": "shopee-seller-return-faq",
+            "audience": "seller",
+            "preview": "### 2. Trường hợp nào Người bán khiếu nại Hoàn tiền ngay sẽ thắng?  Người bán cần khiếu nại đúng hạn trong vòng 2 ngày sau khi nhận được thông báo Hoàn tiền ngay và cung cấp bằng c"
+          }
+        ],
+        "marker_in_top3": true,
+        "expected_doc_in_top3": true,
+        "agent_answer_preview": "[BENCH] Answer the question using ONLY the context below. Cite supporting chunks by number like [1], [2]. If the answer is not in the context, say you cannot find it.  Context: [1] (source: data/ecommerce/shopee-return-refund-general.md) ## 1.2. Th..."
+      },
+      {
+        "query_id": 3,
+        "query": "Trong bao lâu cần phản hồi hoặc khiếu nại quyết định hoàn tiền của Shopee?",
+        "filter_used": null,
+        "top3": [
+          {
+            "score": 0.811,
+            "doc_id": "shopee-return-refund-general",
+            "audience": "buyer",
+            "preview": "## 1.2. Thời gian tối đa để gửi yêu cầu trả hàng hoàn tiền cho Shopee  Yêu cầu Trả hàng/Hoàn tiền của bạn sẽ được phản hồi trong vòng 3-5 ngày làm việc. Hãy theo dõi mục thông báo "
+          },
+          {
+            "score": 0.7693,
+            "doc_id": "shopee-seller-return-faq",
+            "audience": "seller",
+            "preview": "### 1. Người mua được Hoàn tiền ngay có thiệt thòi cho Shop không?  Shop hoàn toàn có thể khiếu nại quyết định Hoàn tiền ngay trong vòng 2 ngày (kể cả thứ 7 và CN, riêng các ngày l"
+          },
+          {
+            "score": 0.7531,
+            "doc_id": "shopee-return-refund-general",
+            "audience": "buyer",
+            "preview": "## 1.2. Thời gian tối đa để gửi yêu cầu trả hàng hoàn tiền cho Shopee  Thời gian để Shopee tiếp nhận yêu cầu Trả hàng/Hoàn tiền từ bạn sẽ là:  - Đối với đơn hàng giao thực phẩm tươ"
+          }
+        ],
+        "marker_in_top3": true,
+        "expected_doc_in_top3": true,
+        "agent_answer_preview": "[BENCH] Answer the question using ONLY the context below. Cite supporting chunks by number like [1], [2]. If the answer is not in the context, say you cannot find it.  Context: [1] (source: data/ecommerce/shopee-return-refund-general.md) ## 1.2. Th...",
+        "ab_no_filter": true
+      },
+      {
+        "query_id": 4,
+        "query": "Shopee có phải là bên thực hiện nghĩa vụ bảo hành sản phẩm trên sàn không?",
+        "filter_used": null,
+        "top3": [
+          {
+            "score": 0.6986,
+            "doc_id": "shopee-return-refund-policy",
+            "audience": "buyer",
+            "preview": "2.1. Theo các điều khoản và điều kiện được quy định trong Chính Sách Trả Hàng và Hoàn Tiền này và tạo thành một phần của Điều Khoản Dịch Vụ, Shopee đảm bảo quyền lợi của Người Mua "
+          },
+          {
+            "score": 0.6903,
+            "doc_id": "shopee-warranty-policy",
+            "audience": "both",
+            "preview": "## 4. Chính sách bảo hành  Shopee khuyến cáo Người Mua hàng cần kiểm tra các chính sách bảo hành, báo trì đối với hàng hóa có dự định mua trước khi đặt hàng. Shopee sẽ không chịu t"
+          },
+          {
+            "score": 0.6833,
+            "doc_id": "shopee-dang-ban-san-pham",
+            "audience": "seller",
+            "preview": "1. Nguyên tắc chung  a. Đăng bán sản phẩm trên Shopee là hoạt động của Người Bán dùng hàng hóa, dịch vụ và tài liệu về hàng hóa, dịch vụ để giới thiệu với khách hàng về hàng hóa, d"
+          }
+        ],
+        "marker_in_top3": true,
+        "expected_doc_in_top3": true,
+        "agent_answer_preview": "[BENCH] Answer the question using ONLY the context below. Cite supporting chunks by number like [1], [2]. If the answer is not in the context, say you cannot find it.  Context: [1] (source: data/ecommerce/shopee-return-refund-policy.md) 2.1. Theo c..."
+      },
+      {
+        "query_id": 5,
+        "query": "Người bán vào đâu trên Kênh Người Bán để quản lý đơn Trả hàng/Hoàn tiền/Hủy?",
+        "filter_used": null,
+        "top3": [
+          {
+            "score": 0.707,
+            "doc_id": "shopee-seller-return-overview",
+            "audience": "seller",
+            "preview": "## 1. Cách thức truy cập và bố cục trang  Tại Kênh người bán > chọn Quản lý đơn hàng > vào mục Trả hàng/Hoàn tiền/Hủy.  Trang này giúp Shop xem các yêu cầu đang chờ xử lý, cần bổ s"
+          },
+          {
+            "score": 0.6874,
+            "doc_id": "shopee-seller-return-overview",
+            "audience": "seller",
+            "preview": "# Tổng quan trang quản lý Trả hàng/Hoàn tiền/Hủy dành cho Người bán  > Nội dung làm sạch từ Học viện Shopee Uni (banhang.shopee.vn/edu/article/21021). Trang SPA không extract được "
+          },
+          {
+            "score": 0.658,
+            "doc_id": "shopee-dang-ban-san-pham",
+            "audience": "seller",
+            "preview": "1. Đối tượng áp dụng  Quy định này áp dụng đối với tất cả Người Bán trên Sàn TMĐT Shopee (“Sàn Shopee”)"
+          }
+        ],
+        "marker_in_top3": true,
+        "expected_doc_in_top3": true,
+        "agent_answer_preview": "[BENCH] Answer the question using ONLY the context below. Cite supporting chunks by number like [1], [2]. If the answer is not in the context, say you cannot find it.  Context: [1] (source: data/ecommerce/shopee-seller-return-overview.md) ## 1. Các..."
+      }
+    ],
+    "recursive": [
+      {
+        "query_id": 1,
+        "query": "Người mua có bao nhiêu ngày để gửi yêu cầu trả hàng hoàn tiền sau khi giao thành công?",
+        "filter_used": null,
+        "top3": [
+          {
+            "score": 0.7898,
+            "doc_id": "shopee-return-refund-general",
+            "audience": "buyer",
+            "preview": "- Đối với các đơn hàng khác: 15 ngày kể từ lúc đơn hàng được cập nhật trạng thái ‘Giao hàng thành công’.  Bạn vẫn có thể gửi yêu cầu Trả hàng/Hoàn tiền sau khi đã bấm nút ‘Đã nhận "
+          },
+          {
+            "score": 0.778,
+            "doc_id": "shopee-return-refund-policy",
+            "audience": "buyer",
+            "preview": "3.2. Người Mua có thể gửi yêu cầu trả hàng/hoàn tiền trong vòng 15 (mười lăm) ngày kể từ lúc đơn hàng được cập nhật giao hàng thành công. Riêng đối với các Sản Phẩm là thực phẩm tư"
+          },
+          {
+            "score": 0.7727,
+            "doc_id": "shopee-dam-bao",
+            "audience": "buyer",
+            "preview": "Trong trường hợp Người mua nhận được sản phẩm khác với mô tả hoặc bị hư hỏng, Người mua có thể yêu cầu Trả hàng/Hoàn tiền trong vòng 15 ngày kể từ lúc đơn hàng được cập nhật trạng "
+          }
+        ],
+        "marker_in_top3": true,
+        "expected_doc_in_top3": true,
+        "agent_answer_preview": "[BENCH] Answer the question using ONLY the context below. Cite supporting chunks by number like [1], [2]. If the answer is not in the context, say you cannot find it.  Context: [1] (source: data/ecommerce/shopee-return-refund-general.md) - Đối với ..."
+      },
+      {
+        "query_id": 2,
+        "query": "Shopee Đảm Bảo cho phép trả hàng hoàn tiền trong bao nhiêu ngày và xử lý khi chưa nhận được hàng?",
+        "filter_used": null,
+        "top3": [
+          {
+            "score": 0.8375,
+            "doc_id": "shopee-return-refund-policy",
+            "audience": "buyer",
+            "preview": "Người Bán cần gửi phản hồi trong vòng 02 ngày lịch (hoặc thời hạn khác được quy định bởi Shopee trong từng thời điểm) kể từ ngày nhận được thông báo của Shopee nếu không đồng ý với"
+          },
+          {
+            "score": 0.8333,
+            "doc_id": "shopee-dam-bao",
+            "audience": "buyer",
+            "preview": "Trong trường hợp Người mua chưa nhận được hàng:  Nếu đơn hàng chưa được chuẩn bị đúng hạn: Người mua sẽ được hoàn tiền theo hình thức thanh toán của đơn hàng hoặc Số dư TK Shopee. "
+          },
+          {
+            "score": 0.8314,
+            "doc_id": "shopee-seller-return-faq",
+            "audience": "seller",
+            "preview": "Ngoại trừ: đơn TTHT một phần; lỗi đơn vị vận chuyển; đơn được chấp nhận hoàn tiền ngay (không trả hàng).  Khi khiếu nại Trả hàng/Hoàn tiền của Shop được Shopee chấp nhận, Shop phải"
+          }
+        ],
+        "marker_in_top3": false,
+        "expected_doc_in_top3": true,
+        "agent_answer_preview": "[BENCH] Answer the question using ONLY the context below. Cite supporting chunks by number like [1], [2]. If the answer is not in the context, say you cannot find it.  Context: [1] (source: data/ecommerce/shopee-return-refund-policy.md) Người Bán c..."
+      },
+      {
+        "query_id": 3,
+        "query": "Trong bao lâu cần phản hồi hoặc khiếu nại quyết định hoàn tiền của Shopee?",
+        "filter_used": {
+          "audience": "seller"
+        },
+        "top3": [
+          {
+            "score": 0.7458,
+            "doc_id": "shopee-seller-return-faq",
+            "audience": "seller",
+            "preview": "## A. Các câu hỏi về quy trình Hoàn tiền ngay (Không cần trả hàng)  ### 1. Người mua được Hoàn tiền ngay có thiệt thòi cho Shop không?  Shop hoàn toàn có thể khiếu nại quyết định H"
+          },
+          {
+            "score": 0.7366,
+            "doc_id": "shopee-seller-return-faq",
+            "audience": "seller",
+            "preview": "Ngoại trừ: đơn TTHT một phần; lỗi đơn vị vận chuyển; đơn được chấp nhận hoàn tiền ngay (không trả hàng).  Khi khiếu nại Trả hàng/Hoàn tiền của Shop được Shopee chấp nhận, Shop phải"
+          },
+          {
+            "score": 0.6966,
+            "doc_id": "shopee-seller-return-faq",
+            "audience": "seller",
+            "preview": "### 2. Trường hợp nào Người bán khiếu nại Hoàn tiền ngay sẽ thắng?  Người bán cần khiếu nại đúng hạn trong vòng 2 ngày sau khi nhận được thông báo Hoàn tiền ngay và cung cấp bằng c"
+          }
+        ],
+        "marker_in_top3": true,
+        "expected_doc_in_top3": true,
+        "agent_answer_preview": "[BENCH] Answer the question using ONLY the context below. Cite supporting chunks by number like [1], [2]. If the answer is not in the context, say you cannot find it.  Context: [1] (source: data/ecommerce/shopee-return-refund-policy.md) Người Bán c..."
+      },
+      {
+        "query_id": 3,
+        "query": "Trong bao lâu cần phản hồi hoặc khiếu nại quyết định hoàn tiền của Shopee?",
+        "filter_used": null,
+        "top3": [
+          {
+            "score": 0.827,
+            "doc_id": "shopee-return-refund-policy",
+            "audience": "buyer",
+            "preview": "Người Bán cần gửi phản hồi trong vòng 02 ngày lịch (hoặc thời hạn khác được quy định bởi Shopee trong từng thời điểm) kể từ ngày nhận được thông báo của Shopee nếu không đồng ý với"
+          },
+          {
+            "score": 0.7491,
+            "doc_id": "shopee-return-refund-general",
+            "audience": "buyer",
+            "preview": "Shopee hiện chưa hỗ trợ yêu cầu đổi hàng. Nếu hàng nhận được có vấn đề (khác với mô tả, hư hỏng,...), bạn có thể từ chối nhận hàng khi đồng kiểm (đối với đơn hàng được Đồng kiểm), "
+          },
+          {
+            "score": 0.7459,
+            "doc_id": "shopee-return-refund-general",
+            "audience": "buyer",
+            "preview": "Yêu cầu Trả hàng/Hoàn tiền của bạn sẽ được phản hồi trong vòng 3-5 ngày làm việc. Hãy theo dõi mục thông báo trên ứng dụng Shopee để nhanh chóng cập nhật tiến trình xử lý khiếu nại"
+          }
+        ],
+        "marker_in_top3": true,
+        "expected_doc_in_top3": false,
+        "agent_answer_preview": "[BENCH] Answer the question using ONLY the context below. Cite supporting chunks by number like [1], [2]. If the answer is not in the context, say you cannot find it.  Context: [1] (source: data/ecommerce/shopee-return-refund-policy.md) Người Bán c...",
+        "ab_no_filter": true
+      },
+      {
+        "query_id": 4,
+        "query": "Shopee có phải là bên thực hiện nghĩa vụ bảo hành sản phẩm trên sàn không?",
+        "filter_used": null,
+        "top3": [
+          {
+            "score": 0.6829,
+            "doc_id": "shopee-return-refund-policy",
+            "audience": "buyer",
+            "preview": "đồng ý của Người Bán. Quy định này nhằm ngăn chặn các hành vi trục lợi, đảm bảo tính minh bạch và công bằng của Chính Sách Trả Hàng và Hoàn Tiền của Shopee.  9.6.  Trường hợp Người"
+          },
+          {
+            "score": 0.6827,
+            "doc_id": "shopee-return-refund-policy",
+            "audience": "buyer",
+            "preview": "2.1. Theo các điều khoản và điều kiện được quy định trong Chính Sách Trả Hàng và Hoàn Tiền này và tạo thành một phần của Điều Khoản Dịch Vụ, Shopee đảm bảo quyền lợi của Người Mua "
+          },
+          {
+            "score": 0.6754,
+            "doc_id": "shopee-dang-ban-san-pham",
+            "audience": "seller",
+            "preview": "Khuyến cáo: Người Bán vui lòng tôn trọng và tuân thủ quy định đăng bán sản phẩm của Shopee và các quy định của pháp luật hiện hành. Mọi sản phẩm không tuân thủ theo các quy định, h"
+          }
+        ],
+        "marker_in_top3": false,
+        "expected_doc_in_top3": false,
+        "agent_answer_preview": "[BENCH] Answer the question using ONLY the context below. Cite supporting chunks by number like [1], [2]. If the answer is not in the context, say you cannot find it.  Context: [1] (source: data/ecommerce/shopee-return-refund-policy.md) đồng ý của ..."
+      },
+      {
+        "query_id": 5,
+        "query": "Người bán vào đâu trên Kênh Người Bán để quản lý đơn Trả hàng/Hoàn tiền/Hủy?",
+        "filter_used": null,
+        "top3": [
+          {
+            "score": 0.775,
+            "doc_id": "shopee-seller-return-overview",
+            "audience": "seller",
+            "preview": "Bài viết giới thiệu trang quản lý Trả hàng/Hoàn tiền/Hủy trên Kênh Người Bán, giúp Shop theo dõi và quản lý các đơn trả hàng hoàn tiền, đơn hủy và đơn giao không thành công.  ## 1."
+          },
+          {
+            "score": 0.7002,
+            "doc_id": "shopee-warranty-policy",
+            "audience": "both",
+            "preview": "Người Bán có trách nhiệm tiếp nhận bảo hành sản phẩm, dịch vụ cho Người Mua như cam kết trong Chính sách bảo hành sản phẩm của Người bán và/hoặc của nhà sản xuất và thông tin về Ch"
+          },
+          {
+            "score": 0.6678,
+            "doc_id": "shopee-seller-return-overview",
+            "audience": "seller",
+            "preview": "# Tổng quan trang quản lý Trả hàng/Hoàn tiền/Hủy dành cho Người bán  > Nội dung làm sạch từ Học viện Shopee Uni (banhang.shopee.vn/edu/article/21021). Trang SPA không extract được "
+          }
+        ],
+        "marker_in_top3": true,
+        "expected_doc_in_top3": true,
+        "agent_answer_preview": "[BENCH] Answer the question using ONLY the context below. Cite supporting chunks by number like [1], [2]. If the answer is not in the context, say you cannot find it.  Context: [1] (source: data/ecommerce/shopee-seller-return-overview.md) Bài viết ..."
+      }
+    ]
+  }
+}
