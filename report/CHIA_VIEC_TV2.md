@@ -1,10 +1,10 @@
 # Chia việc — Thành viên 2 (TV2)
 
-**Họ tên:** [Điền họ tên TV2]
+**Họ tên:** Nguyễn Thị Thuý Hiền
 **Nhóm:** G69 (K4-L3B)
 **Vai trò tắt:** Dẫn Phase 1 store/agent + chiến lược Recursive tinh chỉnh ở Phase 2
 
-> Đổi `[Điền họ tên TV2]` thành tên thật trước khi nộp. File cặp: `CHIA_VIEC_TV1.md`.
+> File cặp: `CHIA_VIEC_TV1.md` (Tạ Đăng Dương).
 
 ---
 

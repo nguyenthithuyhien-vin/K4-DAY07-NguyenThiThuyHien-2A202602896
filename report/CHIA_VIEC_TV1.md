@@ -1,10 +1,10 @@
 # Chia việc — Thành viên 1 (TV1)
 
-**Họ tên:** [Điền họ tên TV1]
+**Họ tên:** Tạ Đăng Dương
 **Nhóm:** G69 (K4-L3B)
 **Vai trò tắt:** Dẫn Phase 1 chunking + chiến lược Heading/Section ở Phase 2
 
-> Đổi `[Điền họ tên TV1]` thành tên thật trước khi nộp. File cặp: `CHIA_VIEC_TV2.md`.
+> File cặp: `CHIA_VIEC_TV2.md` (Nguyễn Thị Thuý Hiền).
 
 ---
 

@@ -1,6 +1,6 @@
 # Báo Cáo Cá Nhân — Lab 7: Embedding & Vector Store
 
-**Họ tên:** [Điền họ tên TV2]
+**Họ tên:** Nguyễn Thị Thuý Hiền
 **Nhóm:** G69 (K4-L3B)
 **Ngày:** 2026-09-20
 **Vai trò Phase 1:** Dẫn EmbeddingStore + KnowledgeBaseAgent; review chunking
@@ -45,7 +45,7 @@
 
 ## 2. Hướng tiếp cận của tôi (My Approach) — Cá nhân (10 điểm)
 
-Vai trò của tôi: dẫn `store.py` / `agent.py`; review phần chunking TV1 đã viết để hiểu đủ khi giải thích trong báo cáo.
+Vai trò của tôi: dẫn `store.py` / `agent.py`; review phần chunking Tạ Đăng Dương đã viết để hiểu đủ khi giải thích trong báo cáo.
 
 ### Các hàm chia nhỏ (Chunking Functions)
 
@@ -104,7 +104,7 @@ tests/test_solution.py::TestEmbeddingStoreDeleteDocument::... PASSED (3 tests)
 
 ## 4. Dự đoán độ tương tự (Similarity Predictions) — Cá nhân (5 điểm)
 
-Embedding: `LocalEmbedder` (cùng backend với TV1, cặp câu khác).
+Embedding: `LocalEmbedder` (cùng backend với Tạ Đăng Dương, cặp câu khác).
 
 | Cặp | Câu A | Câu B | Dự đoán | Điểm thực tế | Đúng? |
 |------|-----------|-----------|---------|--------------|-------|

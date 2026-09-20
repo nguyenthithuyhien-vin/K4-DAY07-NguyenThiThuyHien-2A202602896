@@ -1,6 +1,6 @@
 # Báo Cáo Cá Nhân — Lab 7: Embedding & Vector Store
 
-**Họ tên:** [Điền họ tên TV1]
+**Họ tên:** Tạ Đăng Dương
 **Nhóm:** G69 (K4-L3B)
 **Ngày:** 2026-09-20
 **Vai trò Phase 1:** Dẫn chunking / similarity / comparator; review store + agent
@@ -44,7 +44,7 @@
 
 ## 2. Hướng tiếp cận của tôi (My Approach) — Cá nhân (10 điểm)
 
-Giải thích cách tiếp cận khi lập trình các phần chính trong gói `src`. Vai trò của tôi: dẫn phần chunking; review phần store/agent của TV2.
+Giải thích cách tiếp cận khi lập trình các phần chính trong gói `src`. Vai trò của tôi: dẫn phần chunking; review phần store/agent của Nguyễn Thị Thuý Hiền.
 
 ### Các hàm chia nhỏ (Chunking Functions)
 

@@ -1,7 +1,7 @@
 # Báo Cáo Nhóm — Lab 7: Embedding & Vector Store
 
 **Nhóm:** G69 (K4-L3B)
-**Thành viên:** [Họ tên TV1], [Họ tên TV2]
+**Thành viên:** Tạ Đăng Dương, Nguyễn Thị Thuý Hiền
 **Ngày:** 2026-09-20
 
 > **Nộp 1 bản / nhóm.** Phần cá nhân nộp riêng trong `REPORT_CANHAN_TV1.md` / `REPORT_CANHAN_TV2.md`. Chi tiết thang điểm: `docs/SCORING.md`.
@@ -73,7 +73,7 @@ Chạy `ChunkingStrategyComparator().compare(..., chunk_size=400)` trên body (k
 
 ### Chiến lược của từng thành viên
 
-**Thành viên 1 — [Họ tên TV1]**
+**Thành viên 1 — Tạ Đăng Dương**
 - **Loại chiến lược:** Custom — `HeadingSectionChunker`
 - **Mô tả & lý do chọn cho chủ đề này:** Chính sách Shopee được biên soạn theo mục (`##`, `3.2.`, …). Chia theo heading giữ nguyên đơn vị ngữ nghĩa; section dài thì cắt recursive và **prefix lại tiêu đề** vào mảnh con.
 - **Code snippet:** xem `src/heading_chunker.py`
@@ -85,7 +85,7 @@ class HeadingSectionChunker:
         ...
 ```
 
-**Thành viên 2 — [Họ tên TV2]**
+**Thành viên 2 — Nguyễn Thị Thuý Hiền**
 - **Loại chiến lược:** RecursiveChunker tinh chỉnh (`chunk_size=400`, separators mặc định)
 - **Mô tả & lý do chọn:** Baseline recursive ổn trên văn bản dài; giảm `chunk_size` để tăng mật độ thông tin trong top-k so với fixed-size mặc định 500.
 - **Code snippet:** `RecursiveChunker(chunk_size=400)` trong `bench.py --strategy recursive`
@@ -94,8 +94,8 @@ class HeadingSectionChunker:
 
 | Thành viên | Chiến lược | Điểm truy xuất (/10 ước lượng) | Điểm mạnh | Điểm yếu |
 |-----------|----------|----------------------|-----------|----------|
-| TV1 | Heading | ~7/10 (Q1,Q3,Q4,Q5 tốt; Q2 yếu) | Section mạch lạc; filter seller rõ | Tài liệu ít heading (Đảm Bảo) bị kém hạng |
-| TV2 | Recursive-400 | ~6/10 (Q1,Q3,Q5 tốt; Q2/Q4 yếu) | Top-1 Q1 sát số liệu 15 ngày | Dễ cắt cụt câu then chốt bảo hành |
+| Tạ Đăng Dương | Heading | ~7/10 (Q1,Q3,Q4,Q5 tốt; Q2 yếu) | Section mạch lạc; filter seller rõ | Tài liệu ít heading (Đảm Bảo) bị kém hạng |
+| Nguyễn Thị Thuý Hiền | Recursive-400 | ~6/10 (Q1,Q3,Q5 tốt; Q2/Q4 yếu) | Top-1 Q1 sát số liệu 15 ngày | Dễ cắt cụt câu then chốt bảo hành |
 
 **Chiến lược nào tốt nhất cho chủ đề này? Tại sao?**
 > Heading phù hợp hơn với văn bản điều khoản có mục rõ. Recursive vẫn hữu ích khi tài liệu ít heading. Cả hai đều cần corpus “gọn” — dump quy chế/điều khoản đầy đủ (~100k ký tự) làm nhiễu cosine nên nhóm loại khỏi tập bench, giữ bản trích bảo hành.
